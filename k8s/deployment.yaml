@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: racing-game-2709
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: racing-game-2709
+  template:
+    spec:
+      containers:
+      - name: racing-game-2709
+        image: ahve/racing-game-2709:latest
+        ports:
+        - containerPort: 5000
