@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: racing-game-2709-svc
+spec:
+  selector:
+    app: racing-game-2709
+  ports:
+  - port: 80
+    targetPort: 5000
